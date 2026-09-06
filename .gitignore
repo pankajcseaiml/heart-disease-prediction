@@ -1,17 +1,61 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
+# Enterprise Gitignore - Heart Disease Early Risk Prediction
 
-# Virtual envs
+# Environment & Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+*.kdbx
+secrets/
+
+# Python Virtual Environments & Cache
 .venv/
 venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+*.mypy_cache/
+*.ruff_cache/
 
-# Streamlit
+# Databases & Data Directories (Persisted via encrypted backups)
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+
+# Backups, Archives & Encrypted Dumps
+backups/
+*.zip
+*.tar
+*.tar.gz
+*.enc
+*.bak
+
+# Logs & Runtime
+logs/
+*.log
+*.pid
+
+# Frontend & Streamlit
 .streamlit/
 
-# IDE
+# IDE & OS Artifacts
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Downloaded CLI Tools
+tools/
+
+
