@@ -124,7 +124,7 @@ DATABASE_URL={db_url}
 BACKUP_ENCRYPTION_KEY={backup_enc_key}
 KEEPASS_DB_PATH=./secrets/heart_disease_vault.kdbx
 RCLONE_REMOTE_NAME=gdrive
-RCLONE_BACKUP_DIR=HeartDiseasePrediction-Backups
+DRIVE_BACKUP_FOLDER=HeartDiseasePrediction-Backups
 """
     env_file.write_text(content, encoding="utf-8")
     print(f"[+] Successfully generated local .env at: {env_file}")

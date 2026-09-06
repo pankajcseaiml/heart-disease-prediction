@@ -53,7 +53,7 @@ def is_remote_configured(rclone_bin: Path, remote_name: str) -> bool:
 def sync_to_google_drive() -> bool:
     load_env_if_present()
     remote_name = os.getenv("RCLONE_REMOTE_NAME", "gdrive")
-    backup_folder = os.getenv("RCLONE_BACKUP_DIR", "HeartDiseasePrediction-Backups")
+    backup_folder = os.getenv("DRIVE_BACKUP_FOLDER", "HeartDiseasePrediction-Backups")
 
     rclone_bin = find_rclone()
     if not rclone_bin:
